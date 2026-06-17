@@ -1,21 +1,26 @@
 # Climate Balance & Agricultural Impact Dashboard using Tableau
 
-## Project Overview
+## Project Summary
 
-This project presents an interactive Tableau dashboard designed to analyse climate balance and agricultural risk across countries. The dashboard focuses on the relationship between temperature and precipitation and identifies regions where high heat and low rainfall may create pressure on agriculture, water availability, and crop productivity.
+This project presents an interactive Tableau dashboard that analyses how climate conditions may affect agriculture across different countries and regions. The dashboard focuses on important climate and agricultural indicators such as temperature, precipitation, crop yield, irrigation access, soil health, extreme weather events, adaptation strategies, and economic impact.
 
-The main aim of this project is to convert climate data into clear visual insights that can support decision-making for climate adaptation, agricultural planning, and food security analysis.
+The main objective of this project is to identify climate-risk patterns that may affect agricultural productivity and present the findings through clear, interactive visual storytelling.
+
+This project demonstrates how Tableau can be used to transform climate and agriculture data into a decision-support dashboard for agricultural planning, water-resource management, and climate adaptation.
 
 ## Business Problem
 
-Climate change is one of the major challenges affecting global agriculture. Rising temperatures, irregular rainfall, drought conditions, and water stress can directly impact crop productivity and farming livelihoods.
+Climate change can directly affect agriculture through rising temperatures, irregular rainfall, drought, extreme weather events, water stress, and reduced crop productivity. These challenges can create serious risks for farmers, policymakers, agricultural planners, and food-security organisations.
 
-Agricultural planners, policymakers, and researchers need a simple way to identify countries that may be more vulnerable to climate imbalance. This dashboard helps answer questions such as:
+Decision-makers need simple and interactive tools to identify which countries or regions may be more exposed to agricultural climate risk.
 
-- Which countries show the highest imbalance between temperature and rainfall?
-- Are hotter countries always receiving less rainfall?
-- Which regions are more exposed to warm and dry climate conditions?
-- Which countries may need more attention for irrigation, drought-resistant crops, and climate adaptation planning?
+This dashboard helps answer the following questions:
+
+- Which countries or regions may be more exposed to climate-related agricultural risk?
+- How do temperature and precipitation patterns relate to agricultural conditions?
+- Which areas may require better irrigation planning or adaptation strategies?
+- Where can policymakers focus climate adaptation and agricultural support?
+- How can climate indicators be communicated clearly through dashboard storytelling?
 
 ## Tools Used
 
@@ -27,15 +32,29 @@ Agricultural planners, policymakers, and researchers need a simple way to identi
 
 ## Dataset
 
-The project uses a climate change and agriculture-related dataset containing country-level climate indicators.
+The project uses the `climate_change_impact_on_agriculture_2024.csv` dataset, which contains 10,000 records and 15 columns related to climate, agriculture, crop production, irrigation, soil health, adaptation strategies, and economic impact.
 
-Key variables used in the dashboard include:
+Key fields include:
 
-- Country name
-- Average annual temperature
-- Annual precipitation
-- Temperature-to-precipitation ratio
-- Country/location information
+- Year
+- Country
+- Region
+- Crop type
+- Average temperature
+- Total precipitation
+- CO2 emissions
+- Crop yield
+- Extreme weather events
+- Irrigation access
+- Pesticide use
+- Fertilizer use
+- Soil health index
+- Adaptation strategies
+- Economic impact
+
+Dataset file:
+
+- `data/climate_change_impact_on_agriculture_2024.csv`
 
 ## Dashboard Preview
 
@@ -47,63 +66,63 @@ Key variables used in the dashboard include:
 
 ![Climate Imbalance Bar Chart](screenshots/climate_imbalance_bar_chart.png)
 
-This horizontal bar chart ranks countries based on a temperature-to-precipitation ratio. The purpose of this chart is to identify countries where heat levels are high compared with rainfall availability.
+This horizontal bar chart ranks countries based on climate imbalance between temperature and rainfall. The purpose of this visual is to identify countries where heat levels are high compared with rainfall availability.
 
-A higher value may indicate stronger climate stress, especially for countries that depend heavily on rain-fed agriculture. These countries may face higher risk of drought, irrigation demand, crop stress, and reduced agricultural productivity.
+A higher imbalance may indicate stronger climate stress, especially for countries that depend heavily on rain-fed agriculture. These countries may face higher risk of drought, irrigation demand, soil moisture loss, and reduced crop productivity.
 
-Why this visual is useful:
+Why this visual was used:
 
 - It provides a clear country-level ranking.
 - It helps identify high-risk countries quickly.
 - Horizontal bars make country names easier to read.
-- Colour intensity supports quick interpretation of climate imbalance.
+- Colour intensity supports quick interpretation of climate stress.
 
-Recruiter-focused insight:
+Analytical insight:
 
-This chart shows how a simple calculated indicator can be used to turn raw climate variables into an actionable risk-ranking metric. Instead of only showing temperature and rainfall separately, the dashboard combines them into a practical measure that supports faster decision-making.
+This chart converts climate variables into a practical risk-ranking view. Instead of only showing temperature and rainfall separately, it helps identify countries where the combination of heat and lower rainfall may create agricultural pressure.
 
 ### 2. Temperature vs Precipitation Scatter Plot
 
 ![Temperature vs Precipitation Scatter Plot](screenshots/temperature_precipitation_scatter.png)
 
-This scatter plot compares average annual temperature with annual precipitation for each country. It helps show whether hotter countries also receive more or less rainfall.
+This scatter plot compares average temperature with total precipitation. It helps show whether hotter countries or regions also receive higher or lower rainfall.
 
-The scatter plot is important because agricultural risk cannot be understood from temperature alone. Some countries may be warm and dry, while others may be warm and wet. These two groups face different agricultural challenges.
+This visual is important because agricultural risk cannot be understood from temperature alone. Some regions may be warm and dry, while others may be warm and wet. These two groups can face very different agricultural challenges.
 
 For example:
 
-- Warm and dry countries may face drought, irrigation demand, and crop yield pressure.
-- Warm and wet countries may face flooding, pests, disease, or drainage-related challenges.
+- Warm and dry regions may face drought, irrigation demand, and crop yield pressure.
+- Warm and wet regions may face flooding, pest growth, crop disease, or drainage-related challenges.
 
-Why this visual is useful:
+Why this visual was used:
 
-- It shows the relationship between two key climate variables.
+- It shows the relationship between two important climate variables.
 - It helps identify clusters and outliers.
-- It separates warm-dry and warm-wet country patterns.
-- It supports deeper analysis beyond basic ranking.
+- It separates warm-dry and warm-wet patterns.
+- It supports deeper analysis beyond simple ranking.
 
-Recruiter-focused insight:
+Analytical insight:
 
-This visual demonstrates analytical thinking by comparing two variables together instead of viewing them separately. It helps identify that temperature alone is not enough to explain agricultural risk; rainfall context is also necessary.
+The scatter plot shows that temperature alone is not enough to explain agricultural climate risk. Rainfall context is also necessary, making the analysis more useful for agriculture and water-resource planning.
 
 ### 3. Temperature and Precipitation Map
 
 ![Climate Map](screenshots/climate_map.png)
 
-The map visualisation shows climate patterns geographically. It helps identify regional clusters where high temperature and low rainfall may overlap.
+The map visualisation shows climate and agriculture patterns geographically. It helps identify regional clusters where high temperature, low rainfall, or other climate-related risks may overlap.
 
-This view is especially useful because climate risk is strongly connected to location. A map allows users to quickly identify whether climate stress is concentrated in certain regions such as North Africa, the Middle East, or the Sahel.
+This view is useful because climate risk is strongly connected to location. A map allows users to quickly understand whether climate stress is concentrated in specific countries or regions.
 
-Why this visual is useful:
+Why this visual was used:
 
 - It adds geographical context to the analysis.
 - It helps identify regional climate-risk hotspots.
 - It supports policy and agricultural planning decisions.
 - It makes the dashboard easier for non-technical users to understand.
 
-Recruiter-focused insight:
+Analytical insight:
 
-The map improves storytelling by showing where climate risks are located, not just which countries have high values. This makes the dashboard more useful for decision-makers who need to prioritise resources by region.
+The map improves the storytelling value of the dashboard by showing where climate risks are located, not just which countries have high values. This makes the dashboard more useful for decision-makers who need to prioritise resources by region.
 
 ### 4. Top 10 Countries with Highest Temperature
 
@@ -111,16 +130,16 @@ The map improves storytelling by showing where climate risks are located, not ju
 
 This treemap highlights the countries with the highest average temperatures. These countries may face stronger heat stress, higher evaporation, increased water demand, and greater pressure on temperature-sensitive crops.
 
-Why this visual is useful:
+Why this visual was used:
 
 - It quickly highlights high-temperature countries.
-- It gives a compact view of top climate-risk areas.
+- It gives a compact view of top heat-exposed areas.
 - Colour helps communicate heat intensity.
 - It complements the climate imbalance ranking and map.
 
-Recruiter-focused insight:
+Analytical insight:
 
-This visual helps identify countries where heat exposure may be a major agricultural concern. When combined with rainfall analysis, it supports better understanding of drought and crop vulnerability risk.
+This visual helps identify countries where heat exposure may be a major agricultural concern. When combined with rainfall, irrigation, and crop-yield analysis, it supports better understanding of drought and crop vulnerability risk.
 
 ### 5. Top 10 Countries with Lowest Temperature
 
@@ -128,66 +147,70 @@ This visual helps identify countries where heat exposure may be a major agricult
 
 This treemap shows countries with the lowest average temperatures. Cold-climate countries may face different agricultural challenges, such as shorter growing seasons, frost risk, and the need for cold-resistant crop varieties.
 
-Why this visual is useful:
+Why this visual was used:
 
 - It shows the opposite side of climate risk.
 - It helps compare hot and cold climate countries.
 - It supports a more balanced climate analysis.
-- It shows that agricultural risk is not only caused by heat but also by extreme cold conditions.
+- It shows that agricultural risk can come from both heat extremes and cold conditions.
 
-Recruiter-focused insight:
+Analytical insight:
 
-Including both highest and lowest temperature countries makes the analysis more complete. It shows that the dashboard considers different types of agricultural climate risk rather than focusing only on heat.
+Including both highest and lowest temperature countries makes the analysis more complete. It shows that agricultural climate risk is not only about heat, but also about understanding different environmental conditions that affect farming.
 
 ## Key Insights
 
-Based on the dashboard analysis, the following insights were identified:
+The dashboard produced the following insights:
 
-1. Countries in arid and semi-arid regions show stronger climate imbalance because they experience high temperatures with relatively low rainfall.
+1. Countries and regions with high temperature and lower rainfall may face stronger agricultural climate stress.
 
-2. Temperature alone does not fully explain agricultural risk. Some warm countries receive high rainfall, while others receive very little rainfall. This means precipitation must be analysed together with temperature.
+2. Temperature alone does not fully explain agricultural risk. Precipitation, irrigation access, crop type, soil health, and extreme weather events also influence agricultural outcomes.
 
 3. Warm-dry regions are more likely to face drought stress, irrigation demand, soil moisture loss, and crop productivity challenges.
 
-4. Warm-wet regions may face different risks, such as flooding, pest growth, crop disease, and drainage problems.
+4. Warm-wet regions may face different risks, including flooding, pest growth, crop disease, and drainage problems.
 
-5. Cold-climate countries may experience shorter growing seasons and may require crop varieties that can tolerate lower temperatures.
+5. Extreme weather events can create additional pressure on crop yield and economic outcomes.
 
-6. Country-level climate indicators are useful for high-level screening, but more detailed regional and seasonal data would improve the accuracy of agricultural planning.
+6. Adaptation strategies such as water management, crop rotation, and improved irrigation can help reduce climate-related agricultural risk.
+
+7. Country-level and regional indicators are useful for high-level screening, but more detailed seasonal and local data would improve planning accuracy.
 
 ## Recommendations
 
-Based on the dashboard findings, the following recommendations can support climate adaptation and agricultural planning:
+Based on the dashboard findings, the following actions may support climate adaptation and agricultural planning:
 
 - Prioritise irrigation investment in warm-dry regions.
-- Promote drought-resistant crop varieties in countries with high climate imbalance.
+- Promote drought-resistant crop varieties in countries with high climate stress.
 - Improve water-harvesting and soil-moisture conservation practices.
-- Use regional and seasonal climate data for more detailed planning.
-- Combine climate indicators with crop yield, land use, and socio-economic data for stronger food-security risk analysis.
-- Monitor high-risk countries regularly to identify changes in climate stress over time.
+- Monitor extreme weather events and their relationship with crop yield.
+- Use regional and seasonal climate data for more detailed agricultural planning.
+- Combine climate indicators with crop yield, soil health, irrigation access, and economic impact data for stronger food-security risk analysis.
+- Track adaptation strategies over time to understand which approaches are most useful in reducing agricultural risk.
 
-## Business / Policy Value
+## Business and Policy Value
 
 This dashboard can support:
 
 - Policymakers identifying climate-risk hotspots
 - Agricultural planners prioritising irrigation and adaptation strategies
 - Researchers studying the relationship between climate and agriculture
-- NGOs or development organisations planning food security interventions
+- NGOs or development organisations planning food-security interventions
 - Data analysts demonstrating how visual analytics can support real-world decision-making
 
-The project shows how Tableau can be used not only for reporting but also for analytical storytelling and decision support.
+The project shows how Tableau can be used not only for reporting, but also for analytical storytelling and decision support.
 
 ## Limitations
 
-This dashboard uses country-level climate data, which may hide important differences within large countries. For example, one part of a country may be dry while another part may receive high rainfall.
+This dashboard uses country-level and regional climate indicators, which may hide important local differences. For example, one part of a country may be dry while another region may receive high rainfall.
 
 Other limitations include:
 
-- Annual averages may hide seasonal climate patterns.
-- Country-level data may not capture local agricultural conditions.
-- The temperature-to-precipitation ratio is a useful screening measure but does not fully represent crop-specific risk.
-- Crop yield, soil type, irrigation access, and socio-economic indicators were not included in the current version.
+- Annual or aggregated values may hide seasonal climate patterns.
+- Country-level data may not fully capture local agricultural conditions.
+- Climate imbalance is useful for screening but does not fully represent crop-specific risk.
+- Additional factors such as market conditions, government policies, farming practices, and local infrastructure were not included in the dashboard.
+- More detailed time-series analysis would be needed to understand long-term climate trends.
 
 ## Future Improvements
 
@@ -196,16 +219,38 @@ Future improvements could include:
 - Adding subnational or regional climate data
 - Including seasonal temperature and rainfall patterns
 - Adding crop-specific vulnerability indicators
-- Integrating crop yield and food production data
 - Creating multi-year climate trend analysis
-- Adding interactive filters for region, income group, or crop type
+- Comparing crop yield across different adaptation strategies
+- Adding interactive filters for crop type, region, year, and adaptation method
 - Publishing the dashboard on Tableau Public for easier online access
 
 ## Project Files
 
 - `Climate_Agriculture_Tableau_Dashboard.twbx` - Tableau packaged workbook
 - `Climate_Agriculture_Tableau_Report.pdf` - project report
+- `data/climate_change_impact_on_agriculture_2024.csv` - source dataset
 - `screenshots/` - dashboard preview images
+
+## Repository Structure
+
+```text
+climate-agriculture-tableau-dashboard/
+│
+├── README.md
+├── Climate_Agriculture_Tableau_Dashboard.twbx
+├── Climate_Agriculture_Tableau_Report.pdf
+│
+├── data/
+│   └── climate_change_impact_on_agriculture_2024.csv
+│
+└── screenshots/
+    ├── dashboard_overview.png
+    ├── climate_imbalance_bar_chart.png
+    ├── temperature_precipitation_scatter.png
+    ├── climate_map.png
+    ├── highest_temperature_treemap.png
+    └── lowest_temperature_treemap.png
+```
 
 ## How to View the Dashboard
 
@@ -219,15 +264,9 @@ To view the dashboard:
 
 - Tableau dashboard development
 - Data visualisation and storytelling
-- Climate data analysis
-- Analytical thinking
+- Climate and agriculture data analysis
 - Dashboard layout design
+- Analytical thinking
 - Insight generation
 - Business and policy-oriented reporting
 - Communication of technical findings to non-technical users
-
-## Author
-
-Sankar Mannem  
-MSc Data Analytics  
-Dublin, Ireland
